@@ -7,7 +7,9 @@ module.exports = (app) => {
  	});
 
    	app.get('/product', (req, res, next) => {
-		res.render('product');
+		res.render('product', {
+			titel: "Produkt"
+		});
  	});
 
  	app.get('/contact', (req, res, next) => {

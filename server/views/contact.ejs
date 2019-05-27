@@ -4,30 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title><%= titel %></title>
 
-	<title><%= typeof titel != "undefined" ? titel: "!!!!!!" %></title>
+	<%- include('partials/styles.ejs') %>
 
 </head>
 <body>
-	<div>logo</div>
 	
-	<nav>
-		
-		<li><a href="/">home</a></li>
-		<li><a href="/contact">contact</a></li>
-		<li><a href="/product">product</a></li>
+		<%- include('partials/logo.ejs') %>
+	
+		<%- include('partials/nav.ejs') %>
+	
 
-	</nav>
-
-	<h1>contact</h1>
+	<h1><%= titel %></h1>
 
 	<div>
 		<p>this is contact</p>
 	</div>
 
 	<footer>
-		<p>footer</p>
+		<%- include('partials/footer.ejs') %>
 	</footer>
-	
 </body>
 </html>
