@@ -9,7 +9,7 @@ module.exports = (app) => {
 
    	app.get('/product', (req, res, next) => {
 		res.render('product', {
-			// titel: "Produkt"
+			titel: "Produkt"
 		});
  	});
 
@@ -20,9 +20,9 @@ module.exports = (app) => {
 		});
 	});
 
-	app.get('/test', (req, res, next) => {
-		res.render('test', {
-			console.log(test)
-		});
-	});
+	// app.get('/test', (req, res, next) => {
+	// 	res.render('test', {
+	// 		console.log(test)
+	// 	});
+	// });
 };
